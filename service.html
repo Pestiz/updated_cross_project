@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Styles/general.css">
+  <link rel="stylesheet" href="/Styles/header.css">
+  <link rel="stylesheet" href="/Styles/index.css">
+  <link rel="stylesheet" href="/Styles/movies-list.css">
+  <link rel="stylesheet" href="/Styles/service.css">
+  <script src="./Script/service.js" defer></script>
+  <script src="https://kit.fontawesome.com/bdd824d5d1.js" crossorigin="anonymous"></script>
+  <!-- Hotjar Tracking Code for https://ca1-html-css-arkadiusz-czachura.netlify.app/ -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 3193594, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+
+  <title>Service</title>
+</head>
+
+<body>
+  <nav>
+    <ul class="nav_list">
+      <li><a href="/index.html">Home Page</a></li>
+      <li><a href="/movies-list.html">Movie List</a></li>
+      <li><a href="/user-login-page.html">Login</a></li>
+      <li><a href="/service.html">Service</a></li>
+      <a class="cta_button" href="/cart_page.html">Cart</a>
+    </ul>
+  </nav>
+  <main>
+    <div class="container">
+      <form>
+        <i class="fas fa-paper-plane"></i>
+
+        <div class="input_group">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter your name" id="contact_name" onkeyup="validateName()">
+          <span id="name_error"></span>
+        </div>
+
+        <div class="input_group">
+          <label>Phone No +47.</label>
+          <input type="tel" placeholder="123 12 123" id="contact_phone" onkeyup="validatePhone()">
+          <span id="phone_error"></span>
+        </div>
+
+        <div class="input_group">
+          <label>Email Id</label>
+          <input type="email" placeholder="Enter Email" id="contact_email" onkeyup="validateEmail()">
+          <span id="email_error"></span>
+        </div>
+
+        <div class="input_group">
+          <label>Your Message</label>
+          <textarea rows="5" placeholder="Enter your message" id="contact_msg" onkeyup="validateMsg()"></textarea>
+          <span id="message_error"></span>
+        </div>
+
+        <button onclick="return validateForm()">Submit</button>
+        <span id="submit_error"></span>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>

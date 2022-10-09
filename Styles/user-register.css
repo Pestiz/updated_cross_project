@@ -1,0 +1,43 @@
+.user-register-header {
+    background-color: rgba(48, 37, 89, 0.8);
+  }
+
+  body {
+    background-image: url('../images/cinema-4153289.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .website-content-info {
+    margin: 5rem auto;
+    margin-top: 10rem;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    padding: 5rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 50%;
+    color: #222;
+    font-weight: bold;
+    letter-spacing: -0.8px;
+    line-height: 1.1;
+  }
+  
+  .user-register-header {
+    height: 25vh;
+  }
+  
+  .main-user-register {
+    width: 70%;
+    height: 75vh;
+  }
+  
+
+  @media (max-width: 1024px) {
+    .website-content-info {
+      font-size: 1.8rem;
+      width: 50vw;
+    }
+  }
+  

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/cart.css">
+    <link rel="stylesheet" href="/Styles/general.css">
+    <link rel="stylesheet" href="/Styles/header.css">
+    <!-- Hotjar Tracking Code for https://ca1-html-css-arkadiusz-czachura.netlify.app/ -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 3193594, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <title>Cart Page</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav_list">
+            <li><a href="/index.html">Home Page</a></li>
+            <li><a href="/movies-list.html">Movie List</a></li>
+            <li><a href="/user-login-page.html">Login</a></li>
+            <li><a href="/service.html">Service</a></li>
+            <a class="cta_button" href="/cart_page.html">Cart</a>
+        </ul>
+    </nav>
+    <main>
+        <h2>Shopping Cart</h2>
+        <section class="small_container cart_page">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <div class="cart_info">
+                        <td>
+                            <img src="/images/blacklight-movie-poster.jpg" alt="Movie_Poster" class="movie_Poster">
+                            <p>Movie you gona Buy</p>
+                            <a href="">Remove</a>
+                        </td>
+                    </div>
+
+                    <td>Product Name</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$5.00</td>
+                </tr>
+                <tr>
+                    <div class="cart_info">
+                        <td>
+                            <img src="/images/blacklight-movie-poster.jpg" alt="Movie_Poster" class="movie_Poster">
+                            <p>Movie you gona Buy</p>
+                            <a href="">Remove</a>
+                        </td>
+                    </div>
+
+                    <td>Product Name</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$5.00</td>
+                </tr>
+            </table>
+
+            <!-- <table> -->
+            <div class="total_price">
+                <p>Total Price</p>
+                <p>13.00$</p>
+                <a href="/payment-page.html" class="payment_btn btn1">Process Payment</a>
+            </div>
+            <!-- </table> -->
+
+        </section>
+    </main>
+</body>
+
+</html>

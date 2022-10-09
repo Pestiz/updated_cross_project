@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+}
+
+main {
+  padding: 3rem;
+}
+
+.input-field {
+  width: 40vw;
+  min-width: 20rem;
+  padding: 0.7rem;
+  margin: 0.5rem;
+  box-shadow: 0 2px 4px gray;
+  border: 0.5px black solid;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.btn {
+  width: 10vw;
+  min-width: 15rem;
+  padding: 0.7rem;
+  cursor: pointer;
+  box-shadow: 0 1px 2px gray;
+  background-color: #302559;
+  color: #FBFA0C;
+  border: 0px;
+}
+
+/* .btn--info {
+  background-color: #FBFA0C;
+  color: black;
+} */
+
+.btn--large {
+  width: 20vw;
+  padding: 1rem;
+}
+
+.btn:hover {
+  background-color: #FBFA0C;
+  color: black;
+}
+
+.btn--info:hover {
+  box-shadow: 0 0.5px 1px gray;
+}
+
+.btn--rounded {
+  border-radius: 2rem;
+}
+
+/* Show more button */
+.btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn--big-content {
+  padding: 2.5rem;
+  font-size: 2rem;
+}
+
+.btn--basked {
+  margin: 1rem auto;
+  width: 5vw;
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: rgba(48, 37, 89, 0.45);
+
+}
+
+li,
+a,
+.cta_button {
+  text-decoration: none;
+}
+
+.nav_list {
+  font: italic small-caps bold 16px/2 cursive;
+  list-style: none;
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_list li {
+  display: inline-block;
+}
+
+.nav_list li a {
+  transition: all 0.3 ease 0s;
+}
+
+.nav_list li a:hover {
+  color: #0088a9;
+}
+
+.cta_button {
+  margin-top: -0.4rem;
+  padding: 0.5rem 2rem;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+.payment_btn {
+  text-decoration: none;
+  padding: 1rem 3rem;
+  font-size: 1.25rem;
+  position: relative;
+  /*mby usuniete*/
+  margin: 0.3rem;
+  /*mby usuniete*/
+}
+
+.btn1 {
+  background: #000;
+  color: #fff;
+  border-radius: 3rem;
+  transition: transform 0.3 ease;
+}
+
+.btn1::after,
+.btn1::before {
+  content: "";
+  position: absolute;
+  opacity: 0.3;
+  background: #000;
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: transform 0.3 ease;
+}
+
+.btn1:hover {
+  /* transform: translate(-1.2rem, - 1.2rem) */
+  transform: translate(-12px, -12px);
+}
+
+.error {
+  color: red;
+  margin-top: 0.2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.display {
+  display: block;
+}
