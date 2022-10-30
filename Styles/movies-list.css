@@ -5,13 +5,18 @@
   
   .movies {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
   
   .movie {
+    position: relative;
     display: flex;
     margin: 0.5rem;
+    margin-top: 2rem;
     border: 1px gray solid;
+    border-radius: 0.5rem;
+    width: 30%;
   }
   
   .movie-img {
@@ -50,6 +55,12 @@
   .movie-price-img {
     max-width: 100%;
     height: auto;
+  }
+
+  .movie-btn{
+    position:absolute;
+    bottom: 0.5rem;
+    left: 50%;
   }
   
   @media (max-width: 1023px) {

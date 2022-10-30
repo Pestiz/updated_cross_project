@@ -56,3 +56,27 @@ footer {
   border-radius: 1rem;
   background-color: white;
 }
+
+/* .products{
+  display: grid;
+  grid-gap: .5rem;
+  grid-template-areas:
+        "PhotoOne PhotoTwo PhotoThree"
+        "PhotoOne PhotoFour PhotoFive";
+  grid-template-columns: 3fr 1fr 1fr;
+}
+.products > div {
+  border: 2px #eee;
+  border-radius: 0.5rem;
+}
+.products > h3{
+  font-size: 15rem;
+}
+.products > div:first-child {
+  grid-area: PhotoOne;
+  height: 45rem;
+}
+.product-image{
+  max-width: 45rem;
+  height: 45rem;
+} */
