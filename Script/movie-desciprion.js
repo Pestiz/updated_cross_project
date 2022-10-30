@@ -4,7 +4,7 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const ID = urlParams.get('id')
 
-const baseUrl = `${window.location.protocol}//${window.location.hostname}/square_eyes/wp-json/wc/store/products/${ID}`;
+const baseUrl = `https://flowerpowercorp.one/square_eyes/wp-json/wc/store/products/${ID}`;
 const singleMovieDescription = document.querySelector(".movie-section");
 
 async function getProducts(url) {
