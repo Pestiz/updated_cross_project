@@ -1,4 +1,5 @@
-const baseUrl = `https://flowerpowercorp.one/square_eyes/wp-admin/edit.php?post_type=product?per_page=6`;
+const baseUrl = `https://flowerpowercorp.one/square_eyes/wp-json/wc/store/products?per_page=6`;
+
 const productContainer = document.querySelector(".productsXD");
 const filter = document.getElementById('movie-filter');
 const filterBtn = document.getElementById('filter-button');
